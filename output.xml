@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-07-28T16:23:54.725715" rpa="false" schemaversion="5">
+<suite id="s1" name="AddItem" source="/Users/pinkporn/Documents/GitHub/Goship/AddItem.robot">
+<kw name="Open Web Todolist" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-07-28T16:23:54.878993" elapsed="0.000203"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:23:54.879588" level="INFO">Opening browser 'Chrome' to base url 'https://abhigyank.github.io/To-Do-List/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-28T16:23:54.879378" elapsed="2.105241"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-28T16:23:56.985613" elapsed="0.477364"/>
+</kw>
+<status status="PASS" start="2024-07-28T16:23:54.878395" elapsed="2.585072"/>
+</kw>
+<test id="s1-t1" name="TC-001 Add Item" line="24">
+<for flavor="IN">
+<iter>
+<kw name="Input data Add Item">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_btn_add}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-28T16:23:57.467763" elapsed="0.251221"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:23:57.720331" level="INFO">Typing text 'กินข้าว' into text field 'id=new-task'.</msg>
+<arg>${locator_input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:23:57.719580" elapsed="0.547889"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:23:58.268601" level="INFO">Clicking element '//button/i[text()='add']'.</msg>
+<arg>${locator_btn_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:23:58.267999" elapsed="0.263560"/>
+</kw>
+<arg>${item}</arg>
+<status status="PASS" start="2024-07-28T16:23:57.466814" elapsed="1.065373"/>
+</kw>
+<var name="${item}">กินข้าว</var>
+<status status="PASS" start="2024-07-28T16:23:57.466219" elapsed="1.066307"/>
+</iter>
+<iter>
+<kw name="Input data Add Item">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_btn_add}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-28T16:23:58.535068" elapsed="0.223044"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:23:58.759328" level="INFO">Typing text 'อาบน้ำ' into text field 'id=new-task'.</msg>
+<arg>${locator_input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:23:58.758641" elapsed="0.415807"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:23:59.175857" level="INFO">Clicking element '//button/i[text()='add']'.</msg>
+<arg>${locator_btn_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:23:59.175015" elapsed="0.268368"/>
+</kw>
+<arg>${item}</arg>
+<status status="PASS" start="2024-07-28T16:23:58.533741" elapsed="0.909950"/>
+</kw>
+<var name="${item}">อาบน้ำ</var>
+<status status="PASS" start="2024-07-28T16:23:58.533042" elapsed="0.910788"/>
+</iter>
+<iter>
+<kw name="Input data Add Item">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_btn_add}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-28T16:23:59.445679" elapsed="0.228999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:23:59.675897" level="INFO">Typing text 'ล้างจาน' into text field 'id=new-task'.</msg>
+<arg>${locator_input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:23:59.675180" elapsed="0.416046"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:00.092303" level="INFO">Clicking element '//button/i[text()='add']'.</msg>
+<arg>${locator_btn_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:00.091705" elapsed="0.250699"/>
+</kw>
+<arg>${item}</arg>
+<status status="PASS" start="2024-07-28T16:23:59.444721" elapsed="0.898194"/>
+</kw>
+<var name="${item}">ล้างจาน</var>
+<status status="PASS" start="2024-07-28T16:23:59.444217" elapsed="0.898899"/>
+</iter>
+<iter>
+<kw name="Input data Add Item">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_btn_add}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-28T16:24:00.345103" elapsed="0.228882"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:00.575239" level="INFO">Typing text 'ออกกำลังกาย' into text field 'id=new-task'.</msg>
+<arg>${locator_input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:00.574433" elapsed="0.409758"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:00.985306" level="INFO">Clicking element '//button/i[text()='add']'.</msg>
+<arg>${locator_btn_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:00.984707" elapsed="0.270402"/>
+</kw>
+<arg>${item}</arg>
+<status status="PASS" start="2024-07-28T16:24:00.344252" elapsed="0.911171"/>
+</kw>
+<var name="${item}">ออกกำลังกาย</var>
+<status status="PASS" start="2024-07-28T16:24:00.343734" elapsed="0.911830"/>
+</iter>
+<iter>
+<kw name="Input data Add Item">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_btn_add}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-28T16:24:01.257263" elapsed="0.225330"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:01.483961" level="INFO">Typing text 'Shopping' into text field 'id=new-task'.</msg>
+<arg>${locator_input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:01.483048" elapsed="0.406058"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:01.890008" level="INFO">Clicking element '//button/i[text()='add']'.</msg>
+<arg>${locator_btn_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:01.889498" elapsed="0.268401"/>
+</kw>
+<arg>${item}</arg>
+<status status="PASS" start="2024-07-28T16:24:01.256444" elapsed="0.901847"/>
+</kw>
+<var name="${item}">Shopping</var>
+<status status="PASS" start="2024-07-28T16:24:01.256063" elapsed="0.902482"/>
+</iter>
+<iter>
+<kw name="Input data Add Item">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator_btn_add}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-28T16:24:02.160328" elapsed="0.228081"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:02.389164" level="INFO">Typing text 'ร้องเพลง' into text field 'id=new-task'.</msg>
+<arg>${locator_input_item}</arg>
+<arg>${item}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:02.388767" elapsed="0.405575"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:02.795462" level="INFO">Clicking element '//button/i[text()='add']'.</msg>
+<arg>${locator_btn_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:02.794847" elapsed="0.278140"/>
+</kw>
+<arg>${item}</arg>
+<status status="PASS" start="2024-07-28T16:24:02.159463" elapsed="0.913862"/>
+</kw>
+<var name="${item}">ร้องเพลง</var>
+<status status="PASS" start="2024-07-28T16:24:02.159052" elapsed="0.914436"/>
+</iter>
+<var>${item}</var>
+<value>@{list_items}</value>
+<status status="PASS" start="2024-07-28T16:23:57.465521" elapsed="5.608155"/>
+</for>
+<status status="PASS" start="2024-07-28T16:23:57.464003" elapsed="5.610589"/>
+</test>
+<test id="s1-t2" name="TC-002 Verify todo task" line="29">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:03.079005" level="INFO">Clicking element '//a[text()='To-Do Tasks']'.</msg>
+<arg>${locator_todoTask}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:03.078429" elapsed="0.263683"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:03.343267" level="INFO">Clicking element '//label/span[text()='กินข้าว']'.</msg>
+<arg>//label/span[text()='${list_items}[0]']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:03.342661" elapsed="0.258530"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:03.602153" level="INFO">Clicking element '//label/span[text()='อาบน้ำ']'.</msg>
+<arg>//label/span[text()='${list_items}[1]']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:03.601644" elapsed="0.263210"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:03.865950" level="INFO">Clicking element '//label/span[text()='ล้างจาน']'.</msg>
+<arg>//label/span[text()='${list_items}[2]']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:03.865414" elapsed="0.259177"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:04.126441" level="INFO">Clicking element '//li[.//span[text()='ออกกำลังกาย']]//button[.='Delete']'.</msg>
+<arg>//li[.//span[text()='${list_items}[3]']]//button[.='Delete']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:04.125507" elapsed="0.258152"/>
+</kw>
+<doc>select task บางรายการ / ลบ task ออกกำลังกาย</doc>
+<status status="PASS" start="2024-07-28T16:24:03.076084" elapsed="1.308003"/>
+</test>
+<test id="s1-t3" name="TC-003 Verify Task in Completed" line="37">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:04.386526" level="INFO">Clicking element '//a[text()='Completed']'.</msg>
+<arg>${locator_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:04.386164" elapsed="0.261225"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:04.887159" level="INFO">Element '//span[text()='กินข้าว']/i' is displayed.</msg>
+<arg>//span[text()='${list_items}[0]']/i</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-28T16:24:04.647875" elapsed="0.239558"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:05.122271" level="INFO">Element '//span[text()='อาบน้ำ']/i' is displayed.</msg>
+<arg>//span[text()='${list_items}[1]']/i</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-28T16:24:04.887870" elapsed="0.234663"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:05.357356" level="INFO">Element '//span[text()='ล้างจาน']/i' is displayed.</msg>
+<arg>//span[text()='${list_items}[2]']/i</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-28T16:24:05.123098" elapsed="0.234672"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:05.477288" level="INFO">Element '//span[text()='ออกกำลังกาย']/i' did not exist.</msg>
+<arg>//span[text()='${list_items}[3]']/i</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-07-28T16:24:05.358605" elapsed="0.118909"/>
+</kw>
+<doc>จะต้องไม่มี task ออกกำลังกาย ใน complete</doc>
+<status status="PASS" start="2024-07-28T16:24:04.384683" elapsed="1.093930"/>
+</test>
+<test id="s1-t4" name="TC-004 Delete All Task Completed" line="45">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:05.481112" level="INFO">Clicking element '//a[text()='Completed']'.</msg>
+<arg>${locator_completed}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:05.480723" elapsed="0.294496"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:05.897709" level="INFO">${list_btn_delete} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="5aa11a78a701fe1aa98c52f9600a9c8f", element="f.1DC62FE2964BB070EB66EC4D7021EF36.d.7EBEA3ED93EFF435C6EB2FF8DCD22274.e.44")&gt;, &lt;selenium.webdriv...</msg>
+<var>${list_btn_delete}</var>
+<arg>//div[contains(@class, "is-active")]//button[.='Delete']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:05.776292" elapsed="0.121659"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:05.900655" level="INFO">Clicking element '//div[contains(@class, "is-active")]//button[.='Delete']'.</msg>
+<arg>//div[contains(@class, "is-active")]//button[.='Delete']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:05.900220" elapsed="0.239788"/>
+</kw>
+<var name="${btn_delete}">&lt;selenium.webdriver.remote.webelement.WebElement (session="5aa11a78a701fe1aa98c52f9600a9c8f", element="f.1DC62FE2964BB070EB66EC4D7021EF36.d.7EBEA3ED93EFF435C6EB2FF8DCD22274.e.44")&gt;</var>
+<status status="PASS" start="2024-07-28T16:24:05.899877" elapsed="0.240297"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:06.140846" level="INFO">Clicking element '//div[contains(@class, "is-active")]//button[.='Delete']'.</msg>
+<arg>//div[contains(@class, "is-active")]//button[.='Delete']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:06.140600" elapsed="0.238655"/>
+</kw>
+<var name="${btn_delete}">&lt;selenium.webdriver.remote.webelement.WebElement (session="5aa11a78a701fe1aa98c52f9600a9c8f", element="f.1DC62FE2964BB070EB66EC4D7021EF36.d.7EBEA3ED93EFF435C6EB2FF8DCD22274.e.45")&gt;</var>
+<status status="PASS" start="2024-07-28T16:24:06.140435" elapsed="0.239052"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:06.381029" level="INFO">Clicking element '//div[contains(@class, "is-active")]//button[.='Delete']'.</msg>
+<arg>//div[contains(@class, "is-active")]//button[.='Delete']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:06.380528" elapsed="0.253845"/>
+</kw>
+<var name="${btn_delete}">&lt;selenium.webdriver.remote.webelement.WebElement (session="5aa11a78a701fe1aa98c52f9600a9c8f", element="f.1DC62FE2964BB070EB66EC4D7021EF36.d.7EBEA3ED93EFF435C6EB2FF8DCD22274.e.46")&gt;</var>
+<status status="PASS" start="2024-07-28T16:24:06.379921" elapsed="0.254620"/>
+</iter>
+<var>${btn_delete}</var>
+<value>@{list_btn_delete}</value>
+<status status="PASS" start="2024-07-28T16:24:05.899013" elapsed="0.735653"/>
+</for>
+<doc>ระวัง: จะ Delete list ไปเรื่อยๆ จนกว่าจะหมด</doc>
+<tag>delete</tag>
+<status status="PASS" start="2024-07-28T16:24:05.479135" elapsed="1.156411"/>
+</test>
+<test id="s1-t5" name="TC-005 Delete All Todo Task" line="54">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:06.658581" level="INFO">Clicking element '//a[text()='To-Do Tasks']'.</msg>
+<arg>${locator_todoTask}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:06.658293" elapsed="0.247722"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:07.023136" level="INFO">${list_btn_delete} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="5aa11a78a701fe1aa98c52f9600a9c8f", element="f.1DC62FE2964BB070EB66EC4D7021EF36.d.7EBEA3ED93EFF435C6EB2FF8DCD22274.e.50")&gt;, &lt;selenium.webdriv...</msg>
+<var>${list_btn_delete}</var>
+<arg>//div[contains(@class, "is-active")]//button[.='Delete']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:06.906617" elapsed="0.116572"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:07.023842" level="INFO">Clicking element '//div[contains(@class, "is-active")]//button[.='Delete']'.</msg>
+<arg>//div[contains(@class, "is-active")]//button[.='Delete']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:07.023662" elapsed="0.241586"/>
+</kw>
+<var name="${btn_delete}">&lt;selenium.webdriver.remote.webelement.WebElement (session="5aa11a78a701fe1aa98c52f9600a9c8f", element="f.1DC62FE2964BB070EB66EC4D7021EF36.d.7EBEA3ED93EFF435C6EB2FF8DCD22274.e.50")&gt;</var>
+<status status="PASS" start="2024-07-28T16:24:07.023543" elapsed="0.241826"/>
+</iter>
+<iter>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-28T16:24:07.266033" level="INFO">Clicking element '//div[contains(@class, "is-active")]//button[.='Delete']'.</msg>
+<arg>//div[contains(@class, "is-active")]//button[.='Delete']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-28T16:24:07.265809" elapsed="0.242010"/>
+</kw>
+<var name="${btn_delete}">&lt;selenium.webdriver.remote.webelement.WebElement (session="5aa11a78a701fe1aa98c52f9600a9c8f", element="f.1DC62FE2964BB070EB66EC4D7021EF36.d.7EBEA3ED93EFF435C6EB2FF8DCD22274.e.51")&gt;</var>
+<status status="PASS" start="2024-07-28T16:24:07.265584" elapsed="0.242439"/>
+</iter>
+<var>${btn_delete}</var>
+<value>@{list_btn_delete}</value>
+<status status="PASS" start="2024-07-28T16:24:07.023353" elapsed="0.484875"/>
+</for>
+<doc>ระวัง: จะ Delete list ไปเรื่อยๆ จนกว่าจะหมด</doc>
+<tag>delete</tag>
+<status status="PASS" start="2024-07-28T16:24:06.657198" elapsed="0.851718"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-28T16:24:07.510433" elapsed="0.170340"/>
+</kw>
+<status status="PASS" start="2024-07-28T16:23:54.727164" elapsed="12.953740"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">delete</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="AddItem">AddItem</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
